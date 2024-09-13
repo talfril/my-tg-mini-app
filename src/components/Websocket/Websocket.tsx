@@ -43,11 +43,13 @@ export const Websocket: FC = () => {
             onClick={openConnection}
             buttonText='Начать разговор с эхо'
             disabled={!!ws && ws.readyState === WebSocket.OPEN}
+            className={styles.buttonsMenuItem}
           />
           <Button
             onClick={closeConnection}
             buttonText='Закончить разговор'
             disabled={!ws || ws.readyState !== WebSocket.OPEN}
+            className={styles.buttonsMenuItem}
           />
         </div>
         <div className={styles.inputSection}>

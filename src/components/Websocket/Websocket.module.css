@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+.buttonsMenuItem{
+  max-width: 40%;
+}
+
 .inputSection {
   display: flex;
   flex-direction: column;

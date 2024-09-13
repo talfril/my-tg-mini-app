@@ -1,0 +1,6 @@
+.page {
+  padding: 6vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}

@@ -1,0 +1,13 @@
+.subTitle {
+  font-size: clamp(1rem, 0.938rem + 0.333vw, 1.125rem);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.text {
+  font-size: clamp(0.875rem, 0.813rem + 0.333vw, 1rem);
+}

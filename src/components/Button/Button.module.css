@@ -1,0 +1,46 @@
+.button {
+  background-color: var(--button-color);
+  color: var(--main-font-color);
+  border: none;
+  padding: 7px;
+  outline: 2px solid var(--additional-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, outline 0.3s ease;
+}
+
+.button:focus-visible {
+  outline: 4px solid var(--additional-color);
+}
+
+.button:disabled {
+  background-color: var(--light-color);
+  cursor: default;
+  outline: 2px solid var(--additional-color);
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 5px var(--accent-color);
+  outline: none;
+}
+
+.button:active {
+  background-color: var(--accent-color);
+  outline: none;
+}
+
+@keyframes outlinePulse {
+  0% {
+    outline-color: var(--additional-color);
+  }
+  50% {
+    outline-color: var(--accent-color);
+  }
+  100% {
+    outline-color: var(--additional-color);
+  }
+}
+
+.button {
+  animation: outlinePulse 5s infinite;
+}

@@ -1,0 +1,31 @@
+.conversationMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.buttonsMenu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+.input {
+  height: 5vh;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sendButton {
+  width: 50%;
+  align-self: flex-end;
+}
+
+.subTitle {
+  width: 100%;
+}

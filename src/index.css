@@ -1,5 +1,51 @@
+:root {
+  --main-background-color: #1f7b67;
+  --main-font-color: #ffffff;
+  --button-color: #006b53;
+  --additional-color: #5ed2b8;
+  --light-color: #7d7d7d;
+  --accent-color: #ff9f00;
+}
+
 body {
-  background: var(--tg-theme-secondary-bg-color, white);
+  background: var(--main-background-color);
+  padding: 0;
+  margin: 0;
+  color: var(--main-font-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
   padding: 0;
   margin: 0;
 }

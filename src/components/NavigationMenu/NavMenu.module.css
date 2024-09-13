@@ -1,0 +1,33 @@
+.navMenu {
+  display: flex;
+  background-color: var(--button-color);
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 100%;
+  font-size: 20px;
+  transition: background-color 1s ease, font-size 1s ease;
+}
+
+.navItem:hover {
+  background-color: var(--additional-color);
+}
+
+.navItem:active {
+  background-color: var(--accent-color);
+  font-size: 25px;
+}
+
+.active {
+  border-top: 2px solid var(--accent-color);
+  font-size: 25px;
+}

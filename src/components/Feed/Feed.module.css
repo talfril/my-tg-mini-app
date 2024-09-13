@@ -1,0 +1,47 @@
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.photoList {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.photoItem {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.photoItemImgWrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.photoItemImg {
+  width: 100%;
+  height: auto;
+  transition: transform 1s ease;
+}
+
+.photoItem:hover .photoItemImg,
+.photoItem:active .photoItemImg {
+  transform: scale(1.2) rotate(6deg);
+}
+
+.photoItemDesc {
+  position: absolute;
+  right: 1.5vw;
+  bottom: 1vh;
+  text-align: right;
+}
+
+.addButton {
+  width: 50%;
+  align-self: flex-end;
+}
